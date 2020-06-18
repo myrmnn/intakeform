@@ -36,7 +36,7 @@ class Form {
         document.body.insertAdjacentHTML('beforeend', `
         <div class="form-wrapper">
  
-    <form action="POST">
+    <form name="contact" method="POST" data-netlify="true">
     <header class="banner">
     <img src="logo-pic.jpg" alt="logo">
     <div>
