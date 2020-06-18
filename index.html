@@ -11,60 +11,26 @@
    
     <a href="#" class="btn open">Intake Form</a>
 
-<!-- <div class="form-wrapper">
-    <header class="banner">
-        <img src="logo-pic.jpg" alt="logo">
-        <h1 class="banner-title">A Joyful Balance Reiki</h1>
-    </header>
-    <form action="POST">
-
-    <p><label for="name">Name:</label>
-    <input type="text" id="name"></p>
-    
-    <p><label for="phone">Phone number:</label>
-    <input type="tel" id="phone"></p>
-
-    <p><label for="address">Mailing Address:</label>
-    <input type="text" id="address"></p>
-
-    <p><label for="name">Would like to be added to our mailing list?</label>
-    <input type="email" id="email" placeholder="Please provide your email"></p>
-    
-    <p><label for="occupation">Occupation:</label>
-    <input type="text" id="phone"></p>
-
-    <p><label for="emergency-name">Emergency Contact Name:</label>
-    <input type="text" id="emergency-name"></p>
-    
-    <p><label for="emergency=phone">Emergency Contact Phone Number:</label>
-    <input type="tel" id="emergency-phone"></p>
-
-    <p><label for="referral">How did you hear about us?</label>
-    <input type="text" id="referral"></p>
-    
-    <p><label for="accomplish-info">What do you hope to accomplish with this Reiki session?</label>
-    <textarea name="accomplish-info" id="" cols="30" rows="10"></textarea></p>
-
-    <p><label for="pain-info">What are your common areas of pain or tenstion?</label>
-    <textarea name="pain-info" id="" cols="30" rows="10"></textarea></p>
-
-    <p><label for="health-info">Have you ever had any accidents or surgeries?</label>
-    <textarea name="health-info" id="" cols="30" rows="10"></textarea></p>
-
-    <p><label for="sign-info">What would be a sign to you that you are feeling better?</label>
-    <textarea name="sign-info" id="" cols="30" rows="10"></textarea></p>
-
-    <p><label for="concerns-info">Do you have any concerns about this session or is there anything else we should know?</label>
-    <textarea name="concerns-info" id="" cols="30" rows="10"></textarea></p>
-
-    <input type="submit" value="Submit">
-
-    </form>
-
-    <div class="close">
-        <i class="fas fa-window-close close-icon"></i>
-     </div>
-</div> -->
+    <form name="contact" method="POST" data-netlify="true" class="hidden">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
 
     <script src="app.js"></script>
 </body>

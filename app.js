@@ -84,7 +84,7 @@ class Form {
     <p><label for="concerns-info">Do you have any concerns about this session or is there anything else we should know?</label>
     <textarea name="concerns-info" id="" cols="30" rows="10"></textarea></p>
 
-    <input type="submit" value="Submit">
+    <button type="submit">Send</button>
 
     </form>
 
